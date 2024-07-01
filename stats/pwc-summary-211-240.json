@@ -1,19 +1,4 @@
 {
-   "plotOptions" : {
-      "column" : {
-         "stacking" : "percent"
-      }
-   },
-   "tooltip" : {
-      "pointFormat" : "<span style=\"color:{series.color}\">{series.name}</span>: <b>{point.y}</b><br/>",
-      "shared" : 1
-   },
-   "chart" : {
-      "type" : "column"
-   },
-   "title" : {
-      "text" : "The Weekly Challenge [2019 - 2024]"
-   },
    "xAxis" : {
       "categories" : [
          "Paulo Custodio",
@@ -54,11 +39,23 @@
       },
       "min" : 0
    },
+   "title" : {
+      "text" : "The Weekly Challenge [2019 - 2024]"
+   },
+   "plotOptions" : {
+      "column" : {
+         "stacking" : "percent"
+      }
+   },
+   "chart" : {
+      "type" : "column"
+   },
    "subtitle" : {
-      "text" : "[Champions: 30] Last updated at 2024-06-29 12:31:35 GMT"
+      "text" : "[Champions: 30] Last updated at 2024-06-30 23:39:22 GMT"
    },
    "series" : [
       {
+         "name" : "Perl",
          "data" : [
             458,
             3,
@@ -90,10 +87,10 @@
             0,
             0,
             25
-         ],
-         "name" : "Perl"
+         ]
       },
       {
+         "name" : "Raku",
          "data" : [
             0,
             0,
@@ -125,10 +122,10 @@
             4,
             24,
             0
-         ],
-         "name" : "Raku"
+         ]
       },
       {
+         "name" : "Blog",
          "data" : [
             0,
             1,
@@ -160,8 +157,11 @@
             0,
             0,
             14
-         ],
-         "name" : "Blog"
+         ]
       }
-   ]
+   ],
+   "tooltip" : {
+      "shared" : 1,
+      "pointFormat" : "<span style=\"color:{series.color}\">{series.name}</span>: <b>{point.y}</b><br/>"
+   }
 }
